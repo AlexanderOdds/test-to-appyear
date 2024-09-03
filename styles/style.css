@@ -34,3 +34,65 @@ nav {
         }
     }
 }
+
+.dashboard{
+    font-family: "Arial";
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 20px;
+    &>.header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+        &>.text{
+            font-size: 20px;
+            font-weight: 800;
+        }
+    }
+
+    &>.state{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        &>.like{
+            border-radius: 20px;
+            width: 270px;
+            height: 150px;
+            background-color: #cddffc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5px;
+        }
+        &>.comment{
+            border-radius: 20px;
+            width: 270px;
+            height: 150px;
+            background-color: #fcf2d9            ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5px;
+            
+        }
+        &>.share{
+            border-radius: 20px;
+            width: 270px;
+            height: 150px;
+            background-color: #ede3fc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5px;
+            
+        }
+    }
+}
