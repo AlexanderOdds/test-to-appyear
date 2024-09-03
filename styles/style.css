@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    margin: auto;
+
+    &>.section-1 {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        /* &>.hamburger{
+            &>img{
+            }
+        } */
+
+        &>.serch-bar{
+            &>input{
+                border: solid 1px rgb(217, 217, 217);
+                border-radius: 8px;
+                width: 800px;
+                height: 40px;
+                padding: 10px;
+            }
+        }
+        &>.profile{
+            &>img{
+                border-radius: 50%;
+            }
+            
+        }
+    }
+}
