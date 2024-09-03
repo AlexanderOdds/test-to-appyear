@@ -1,6 +1,22 @@
 * {
     box-sizing: border-box;
 }
+table{
+    width: 100%;
+    margin-bottom: 20px; 
+
+}
+table th{
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+table td{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
 
 nav {
     margin: auto;
@@ -37,8 +53,8 @@ nav {
 
 .dashboard{
     font-family: "Arial";
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 280px;
+    padding-right: 280px;
     padding-top: 20px;
     &>.header{
         display: flex;
@@ -98,6 +114,29 @@ nav {
             align-items: center;
             row-gap: 5px;
             
+        }
+    }
+}
+
+.recent-activity{
+    font-family: "Arial";
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-top: 20px;
+    &>.header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+        padding-bottom: 20px;
+        &>.image{
+            &>img{
+                border-radius: 5px;
+            }
+        }
+        &>.text{
+            font-size: 20px;
+            font-weight: 800;
         }
     }
 }
