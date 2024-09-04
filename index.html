@@ -10,149 +10,154 @@
 </head>
 
 <body>
-    <nav>
-        <section class="section-1">
-            <section class="hamburger">
-                <img src="img/hamburger.png" alt="" width="20px" height="20px" id="hamburger-icon">
-            </section>
-            <section class="serch-bar">
-                <input type="text" placeholder="Search here...">
-            </section>
-            <section class="profile">
-                <img src="img/profile.png" alt="" width="40px" height="40px">
-            </section>
-        </section>
-    </nav>
-
-    <section id="sidebar" class="sidebar">
-        <section class="top-sidebar">
-            <section class="header">
-                <section class="image">
-                    <img src="img/A.png" alt="" width="50px" height="100%">
+    <div class="main-container">
+        <nav>
+            <section class="section-1">
+                <section class="hamburger">
+                    <img src="img/hamburger.png" alt="" width="20px" height="20px" id="hamburger-icon">
                 </section>
-                <section class="name">
-                    Codinglab
+                <section class="serch-bar">
+                    <input type="text" placeholder="Search here...">
                 </section>
-                <section class="close-button">
-                    <img src="img/close.png" alt="Close" width="5px" height="5px" id="close-sidebar">
+                <section class="profile">
+                    <img src="img/profile.png" alt="" width="40px" height="40px">
                 </section>
             </section>
-            <section class="navbar">
+        </nav>
+        <section id="sidebar" class="sidebar">
+            <section class="top-sidebar">
+                <section class="header">
+                    <section class="image">
+                        <img src="img/A.png" alt="" width="50px" height="100%">
+                    </section>
+                    <section class="name">
+                        Codinglab
+                    </section>
+                    <section class="close-button">
+                        <img src="img/close.png" alt="Close" width="20px" height="20px" id="close-sidebar">
+                    </section>
+                </section>
+                <section class="navbar">
+                    <ul>
+                        <li><a href="#dashboard"><img src="img/home.png" alt="" width="25px" height="25px">Dashboard</a>
+                        </li>
+                        <li><a href="#activity"><img src="img/content.png" alt="" width="25px" height="25px">Content</a>
+                        </li>
+                        <li><a href="#settings"><img src="img/analytics.png" alt="" width="25px"
+                                    height="25px">Analytics</a>
+                        </li>
+                        <li><a href="#like"><img src="img/thumbs-up.png" alt="" width="25px" height="25px">Like</a></li>
+                        <li><a href="#comment"><img src="img/chat.png" alt="" width="25px" height="25px">Comment</a>
+                        </li>
+                        <li><a href="#share"><img src="img/share.png" alt="" width="25px" height="25px">Share</a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="footer">
                 <ul>
-                    <li><a href="#dashboard"><img src="img/home.png" alt="" width="25px" height="25px">Dashboard</a>
+                    <li><a href="#logout"><img src="img/exit.png" alt="" width="25px" height="25px">Logout</a></li>
+                    <li><a href="#dark-mode"><img src="img/dark-mode.png" alt="" width="25px" height="25px">Darkmode</a>
                     </li>
-                    <li><a href="#activity"><img src="img/content.png" alt="" width="25px" height="25px">Content</a>
-                    </li>
-                    <li><a href="#settings"><img src="img/analytics.png" alt="" width="25px" height="25px">Analytics</a>
-                    </li>
-                    <li><a href="#like"><img src="img/thumbs-up.png" alt="" width="25px" height="25px">Like</a></li>
-                    <li><a href="#comment"><img src="img/chat.png" alt="" width="25px" height="25px">Comment</a></li>
-                    <li><a href="#share"><img src="img/share.png" alt="" width="25px" height="25px">Share</a></li>
                 </ul>
             </section>
         </section>
-        <section class="footer">
-            <ul>
-                <li><a href="#logout"><img src="img/exit.png" alt="" width="25px" height="25px">Logout</a></li>
-                <li><a href="#dark-mode"><img src="img/dark-mode.png" alt="" width="25px" height="25px">Darkmode</a>
-                </li>
-            </ul>
-        </section>
-    </section>
 
-    <section class="dashboard">
-        <section class="header">
-            <section class="image">
-                <img src="img/dashboard1.png" alt="" width="30px" height="30px">
-            </section>
-            <section class="text">
-                Dashboard
-            </section>
-        </section>
-        <section class="state">
-            <section class="like">
-                <section class="icon">
-                    <img src="img/thumbs-up.png" alt="" width="50px" height="50px">
+        <main class="content">
+            <section class="dashboard">
+                <section class="header">
+                    <section class="image">
+                        <img src="img/dashboard1.png" alt="" width="30px" height="30px">
+                    </section>
+                    <section class="text">
+                        Dashboard
+                    </section>
                 </section>
-                <section class="word">Total Likes</section>
-                <section class="total">50,120</section>
-            </section>
-            <section class="comment">
-                <section class="icon">
-                    <img src="img/chat.png" alt="" width="50px" height="50px">
+                <section class="state">
+                    <section class="like">
+                        <section class="icon">
+                            <img src="img/thumbs-up.png" alt="" width="50px" height="50px">
+                        </section>
+                        <section class="word">Total Likes</section>
+                        <section class="total">50,120</section>
+                    </section>
+                    <section class="comment">
+                        <section class="icon">
+                            <img src="img/chat.png" alt="" width="50px" height="50px">
 
+                        </section>
+                        <section class="word">Comments</section>
+                        <section class="total">25,120</section>
+
+                    </section>
+                    <section class="share">
+                        <section class="icon">
+                            <img src="img/share.png" alt="" width="50px" height="50px">
+
+                        </section>
+                        <section class="word">Total Share</section>
+                        <section class="total">10,320</section>
+
+                    </section>
                 </section>
-                <section class="word">Comments</section>
-                <section class="total">25,120</section>
-
             </section>
-            <section class="share">
-                <section class="icon">
-                    <img src="img/share.png" alt="" width="50px" height="50px">
-
+            <section class="recent-activity">
+                <section class="header">
+                    <section class="image">
+                        <img src="img/calendar.png" alt="" width="30px" height="30px">
+                    </section>
+                    <section class="text">
+                        Recent Activity
+                    </section>
                 </section>
-                <section class="word">Total Share</section>
-                <section class="total">10,320</section>
-
+                <section class="table-container">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Joined</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>Jan 21, 2020</td>
+                            <td>New</td>
+                            <td>Liked</td>
+                        </tr>
+                        <tr>
+                            <td>Kaiden Goodwin</td>
+                            <td>kaiden@example.com</td>
+                            <td>Jan 11, 2020</td>
+                            <td>Member</td>
+                            <td>Shared</td>
+                        </tr>
+                        <tr>
+                            <td>Hanna Harris</td>
+                            <td>hanna@example.com</td>
+                            <td>Jan 11, 2020</td>
+                            <td>New</td>
+                            <td>Shared</td>
+                        </tr>
+                        <tr>
+                            <td>Magnus Yates</td>
+                            <td>magnus@example.com</td>
+                            <td>Jan 10, 2020</td>
+                            <td>Member</td>
+                            <td>Shared</td>
+                        </tr>
+                        <tr>
+                            <td>Sharon Price</td>
+                            <td>sharon@example.com</td>
+                            <td>Jan 10, 2020</td>
+                            <td>Member</td>
+                            <td>Liked</td>
+                        </tr>
+                    </table>
+                </section>
             </section>
-        </section>
-    </section>
-    <section class="recent-activity">
-        <section class="header">
-            <section class="image">
-                <img src="img/calendar.png" alt="" width="30px" height="30px">
-            </section>
-            <section class="text">
-                Recent Activity
-            </section>
-        </section>
-        <section class="table">
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Joined</th>
-                    <th>Type</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>John Doe</td>
-                    <td>john@example.com</td>
-                    <td>Jan 21, 2020</td>
-                    <td>New</td>
-                    <td>Liked</td>
-                </tr>
-                <tr>
-                    <td>Kaiden Goodwin</td>
-                    <td>kaiden@example.com</td>
-                    <td>Jan 11, 2020</td>
-                    <td>Member</td>
-                    <td>Shared</td>
-                </tr>
-                <tr>
-                    <td>Hanna Harris</td>
-                    <td>hanna@example.com</td>
-                    <td>Jan 11, 2020</td>
-                    <td>New</td>
-                    <td>Shared</td>
-                </tr>
-                <tr>
-                    <td>Magnus Yates</td>
-                    <td>magnus@example.com</td>
-                    <td>Jan 10, 2020</td>
-                    <td>Member</td>
-                    <td>Shared</td>
-                </tr>
-                <tr>
-                    <td>Sharon Price</td>
-                    <td>sharon@example.com</td>
-                    <td>Jan 10, 2020</td>
-                    <td>Member</td>
-                    <td>Liked</td>
-                </tr>
-            </table>
-        </section>
-    </section>
+        </main>
+    </div>
     <script src="scripts/script.js"></script>
 
 </body>
