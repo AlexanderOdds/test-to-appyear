@@ -143,6 +143,7 @@ nav {
 }
 
 .sidebar {
+    font-family: "Arial";
     position: fixed;
     left: -300px;
     top: 0;
@@ -151,6 +152,69 @@ nav {
     background-color: #e5e5e5;
     transition: left 0.3s ease-in-out;
     z-index: 1000;
+    &>.header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        padding-top: 40px;
+        &>.name{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    &>.navbar{
+        padding-left: 40px;
+        padding-top: 40px;
+        display: flex;
+    }
+    &>.navbar ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    &>.navbar ul li{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+    &>.navbar ul li a{
+        display: flex;
+        align-items: end;
+        text-decoration: none;
+        color: inherit;
+    }
+    &>.navbar ul li img {
+        margin-right: 8px;
+
+    }
+
+    &>.footer{
+        padding-left: 40px;
+        padding-top: 40px;
+        display: flex;
+    }
+    &>.footer ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    &>.footer ul li{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+    &>.footer ul li a{
+        display: flex;
+        align-items: end;
+        text-decoration: none;
+        color: inherit;
+    }
+    &>.footer ul li img {
+        margin-right: 8px;
+
+    }
 }
 
 .sidebar.open {
@@ -160,6 +224,7 @@ nav {
 .sidebar ul {
     list-style-type: none;
     padding: 20px;
+    
 }
 
 .sidebar ul li {
@@ -179,5 +244,4 @@ nav {
 body.sidebar-open .dashboard,
 body.sidebar-open .recent-activity, body.sidebar-open nav {
     margin-left: 100px;
-    margin-right: 0px;
 }
