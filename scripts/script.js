@@ -1,18 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const sidebar = document.getElementById('sidebar');
-    const body = document.body;
-
-    hamburgerIcon.addEventListener('click', function() {
-        sidebar.classList.toggle('open');
-        body.classList.toggle('sidebar-open');
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.sidebar');
+    const closeButton = document.querySelector('#close-sidebar');
+    const hamburgerIcon = document.querySelector('#hamburger-icon');
+    
+    hamburgerIcon.addEventListener('click', () => {
+        sidebar.classList.add('open');
+        document.body.classList.add('sidebar-open');
     });
 
-    // Close sidebar when clicking outside of it
-    document.addEventListener('click', function(event) {
-        if (!sidebar.contains(event.target) && !hamburgerIcon.contains(event.target)) {
-            sidebar.classList.remove('open');
-            body.classList.remove('sidebar-open');
-        }
+    closeButton.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        document.body.classList.remove('sidebar-open');
     });
 });
